@@ -1,0 +1,10 @@
+on: '3.6'
+services:
+    phpweb:
+          image: 'php:7.4-apache'
+      restart: always
+      ports:
+        - '80:80'
+      volumes:
+        - '/tmp/itiphp:/var/www/html'
+      
